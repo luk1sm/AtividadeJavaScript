@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 17</title>
+    <style>
+        body {
+            background-color: #000;
+            transition: background-color 0.5s;
+        }
+        h1 {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bem vindo a ativiade 17.</h1>
+    <button id="lightenButton">Clique para clarear a tela</button>
+
+    <script>
+        let lightness = 0;
+
+        document.getElementById('lightenButton').addEventListener('click', () => {
+            if (lightness < 100) {
+                lightness += 10;
+                document.body.style.backgroundColor = `hsl(0, 0%, ${lightness}%)`;
+            }
+        });
+    </script>
+</body>
+
+</html>
