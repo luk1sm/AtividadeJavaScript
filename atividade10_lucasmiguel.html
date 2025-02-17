@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <h1>Bem vindo a ativiade 10.</h1>
+    <p id="text">Este é um parágrafo de exemplo.</p>
+    <button onclick="transformText()">Transformar em maiúsculas</button>
+
+    <script>
+    function transformText() {
+        var paragraph = document.getElementById("text");
+        paragraph.textContent = paragraph.textContent.toUpperCase();
+    }
+    </script>
+</body>
+</html>

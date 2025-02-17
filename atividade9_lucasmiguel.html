@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+</head>
+<body>
+    <h1>Bem vindo a ativiade 9.</h1>
+
+    <button onclick="toggleMood()">Altere Humor</button>
+    <script>
+        let currentMood = 'happy';
+
+        function toggleMood() {
+            const body = document.body;
+            const h1 = document.querySelector('h1');
+            if (currentMood === 'happy') {
+                body.style.backgroundColor = 'blue';
+                h1.textContent = 'Você está triste!';
+                currentMood = 'sad';
+            } else {
+                body.style.backgroundColor = 'yellow';
+                h1.textContent = 'Você está feliz!';
+                currentMood = 'happy';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 22</title>
+</head>
+<body>
+    <h1>Bem vindo a atividade 22.</h1>
+    <h2>Digite uma senha:</h2>
+    <form onsubmit="return validatePassword()">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+        function validatePassword() {
+            var password = document.getElementById('password').value;
+            if (password.length < 6) {
+                alert('Senha fraca! A senha deve ter pelo menos 6 caracteres.');
+                return false;
+            }else 
+                alert("Senha eviada com sucesso!");
+            return true;
+        }
+    </script>
+</body>
+</html>
